@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0; 
+    padding:0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ------------------------------------------------------页面高度---------------------------------------------------- */
+body{
+    height: 1000px;
+}
+/* ------------------------------------------------------头部------------------------------------------------------- */
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+/* ------------------------------------------------------主体------------------------------------------------------ */
+header>.header-main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(210,210,210);
+    /* display: block; */
+    /* text-align: center; */
+}
+/* -------------------------------------------------------左标题----------------------------------------------------- */
+header>div>.header-left{
+    width: 180px;
+    height: 60%;
+    /* background-color: white; */
+    display: block;
+    /* float: left; */
+    line-height: 60px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 35px;
+}
+/* ------------------------------------------------------搜索框--------------------------------------------------------- */
+.header-search{
+    position: absolute;
+    display: inline-block;
+    width: 45%;
+    height: 40px;
+    top: 30px;
+    left: 30%;
+    /* border: 1px solid black; */
+}
+.header-search>#name{
+    width: 75%;
+    height: 100%;
+    border: 0;
+    outline: none;
+	border: none;
+}
+.header-search>#search-btn{
+    width: 40px;
+    height: 100%;
+    /* background-color: rgb(248, 248, 248); */
+    border: 0;
+    outline: none;
+    border: none;
+    color: skyblue;
+    background-color: white;
+    -webkit-transition: background-color .2s ease .1s;
+    -moz-transition: background-color .2s ease .1s;
+    -o-transition: background-color .2s ease .1s;
+    -ms-transition: background-color .2s ease .1s;
+    transition: background-color .2s ease .1s;
+}
+.header-search>#search-btn:hover{
+    color: white;
+    background-color: skyblue;
+}
+/* -------------------------------------------------------右头像---------------------------------------------------- */
+header> div>.header-right{
+    width: 100px;
+    height: 100%;
+    background-color: white;
+    float: right;
+    /* display: block; */
+}
+/* -----------------------------------------------------头像img----------------------------------------------------- */
+header> div>.header-right> .HeadPhoto{
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------------------------------------主体------------------------------------------------------- */
+.main{
+    width: 96%;
+    height: 1500px;
+    margin: 0 auto;
+    padding-top: 10px;
+    /* background-color: black; */
+}
+/* --------------------------------------------------今日更新推荐---------------------------------------------------- */
+.today-update{
+    width: 98%;
+    height: 320px;
+    margin: 0px auto;
+    /* background-color: blue; */
+    margin-bottom: 20px;
+    padding-top: 10px;
+    position: relative;
+}
+/* -----------------------------------------------------轮播图------------------------------------------------------ */
+#carouselExampleIndicators{
+    width: 40%;
+    height: 300px;
+    /* background-color: yellow; */
+    margin: 0 10px;
+    display: inline-block;
+    border: 1px solid rgb(210, 210, 210);
+    position: relative;
+}
+.carousel-inner>.carousel-item>a>img, .carousel-inner>.carousel-item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    margin: 0px auto;
+    display: block;
+    /* max-width: 90%; */
+    width: 100%;
+    height: 300px;
+}
+.carousel-indicators {
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* left: 50%; */
+    /* z-index: 15; */
+    width: 100%;
+    margin: 0 auto;
+    /* padding-left: 0; */
+    /* margin-left: -30%; */
+    /* text-align: center; */
+    /* list-style: none; */
+    background-color: gray;
+    opacity: 0.8;
+    background-image: linear-gradient(to top,rgba(71, 71, 71,0.8),rgba(121,121,121,0.7),rgba(171,171,171,0.7),rgba(205,205,205,0.6),rgba(250,250,250,0.4));
+}
+.carousel-control-prev{
+    left: 0;
+    background-image: linear-gradient(to right,rgba(71, 71, 71,0.8),rgba(121,121,121,0.7),rgba(171,171,171,0.7),rgba(205,205,205,0.6),rgba(250,250,250,0.4));
+}
+.carousel-control-next{
+    right: 0;
+    background-image: linear-gradient(to left,rgba(71, 71, 71,0.8),rgba(121,121,121,0.7),rgba(171,171,171,0.7),rgba(205,205,205,0.6),rgba(250,250,250,0.4));
+}
+/* .banner>ul{
+    margin: 0;
+    list-style: none;
+}
+.banner>ul>li{
+    list-style: none;
+} */
+/* div.banner>ul.img>li{
+    position:absolute;
+    display:none;
+}
+div.banner>ul.img>li.active{
+    display:block;
+}
+div.banner>ul.img>li>img{
+    width:100%;
+    display:block;
+}
+div.banner>ul.circle{
+    position:absolute;
+    left: 35%;
+    top: 90%;
+}
+div.banner>ul.circle>li{
+    width:10px;
+    height:10px;
+    background:#666;
+    border-radius:50%;
+    float:left;
+    margin:0px 10px;
+}
+div.banner>ul.circle>li:hover{
+    cursor: pointer;
+}
+div.banner>ul.circle>li.active{
+    background:white;
+} */
+/* div.banner>span{
+    display:block;
+    width: 6%;
+    height: 25%;
+    background:rgba(135, 128, 133, 0.54);
+    color:white;
+    font-size: 30px;
+    text-align:center;
+    line-height:80px;
+    position:absolute;
+    top: 35%;
+}
+div.banner>span#left{
+    opacity: 0;
+    left:0px;
+}
+div.banner>span#left:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+div.banner>span#right{
+    opacity: 0;
+    right:0px;
+}
+div.banner>span#right:hover{
+    opacity: 1;
+    cursor:pointer;
+} */
+/* ---------------------------------------------------右盒子群------------------------------------------------------ */
+.news-boxes{
+    width: 57.5%;
+    height: 305px;
+    margin: 0;
+    padding: 0px 5px 5px 5px;
+    right: 10px;
+    /* background-color: green; */
+    position: absolute;
+    display: inline-block;
+    border: 1px solid rgb(210, 210, 210);
+}
+.news-boxes-all{
+    width: 100%;
+    height: 145px;
+    margin: 5px auto;
+    /* background-color: grey; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1px;/*列边距*/
+    row-gap: 5px;/*行边距*/
+    align-items: center;/*垂直方向居中对齐*/
+    /*align-items: end;/*垂直方向靠下对齐*/
+    justify-items: center;
+}
+/* .news-boxes-under{
+    width: 100%;
+    height: 145px;
+    margin: 5px auto;
+    /* background-color: grey; 
+} */
+.news-box{
+    width: 190px;
+    height: 140px;
+    background-color: white;
+    display: inline-block;
+    /* margin: 0px 3px; */
+    /* border-radius: 5px; */
+    border: 1px solid rgb(210, 210, 210);
+}
+.news-box:hover{
+    width: 190px;
+    height: 140px;
+    background-color: rgb(248, 248, 248);
+    /* display: inline-block; */
+    cursor: pointer;
+    /* margin: 0px 3px; */
+    /* border-radius: 5px; */
+    /* opacity: 0.1; */
+}
+/* --------------------------------------------------选项卡集合----------------------------------------------------- */
+.tags{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 30px;
+    align-items: center;
+    justify-items: center;
+    /* border: 1px solid black; */
+}
+/* -----------------------------------------------------选项卡------------------------------------------------------ */
+.tag-boxes{
+    /* margin: 30px 10px; */
+    background-color: white;
+    width: 450px;
+    height: 300px;
+    /* display: inline-block; */
+    border: 1px solid rgb(210, 210, 210);
+}
+.tag-boxes:hover{
+    box-shadow: 0px 0px 1px 0px gray;
+}
+/* --------------------------------------------------选项卡标题------------------------------------------------------- */
+.tag-title{
+    background-color: rgb(248,248,248);
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+.tag-title>a{
+    text-decoration: none;
+    color: gray;
+}
+/* ----------------------------------------------------右侧边栏置顶按钮----------------------------------------------------- */
+.right-sidebar{
+    width: 3%;
+    height: 180px;
+    /* float: right; */
+    right: 5px;
+    bottom: 75px;
+    position: fixed;
+    background-color: white;
+    border: 1px solid rgb(231,231,231);
+    border-radius: 6px 6px;
+    display: none;
+}
+.right-sidebar>ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.right-sidebar>ul>li{
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    margin: 0;
+}
+.right-sidebar>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background-color .2s ease .1s;
+    -moz-transition: background-color .2s ease .1s;
+    -o-transition: background-color .2s ease .1s;
+    -ms-transition: background-color .2s ease .1s;
+    transition: background-color .2s ease .1s;
+}
+.right-sidebar>ul>li>a:hover{
+    transition: 0.3s;
+    background-color: rgba(0,161,214,1);
+}
+#toTop{
+    border: 1px solid black;
+    border-radius: 0px 0px 6px 6px;
+}
+/* ------------------------------------------------------底部------------------------------------------------------- */
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(248,249,250, 1);
+}
+#footer_box{
+    margin: 5px auto;
+    width: 88%;
+    height: 90%;
+    position: relative;
+}
+#footer_box>#callMe{
+    width: 60%;
+    height: 90%;
+    margin: 5px 0px 5px 5px;
+}
+#callMe>ul{
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 8px;
+}
+#callMe>ul>li{
+    padding: 2px;
+}
+#copyright{
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    text-align: center;
+}
+#copyright>span{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
